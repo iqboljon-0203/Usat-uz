@@ -7,7 +7,11 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "noEmit": true
+    "noEmit": true,"allowJs": true,
+    "checkJs": false, // JavaScript fayllarni tahrir qilishni yoqmaslik
+    "noImplicitAny": false, // 'any' tipiga ruxsat berish
+    "resolveJsonModule": true, // JSON fayllarni import qilishga ruxsat berish
+    "esModuleInterop": true // ES modullari bilan hamkorlik qilishni osonlashtiradi
   },
   "include": ["vite.config.ts"]
 }
