@@ -1,5 +1,5 @@
 import './Info.css';
-import Usat from '../../../assets/logos/usat.png';
+import Usat from '../../../assets/logos/usat_title.webp';
 import { useTranslation } from 'react-i18next';
 const Info: React.FC = () => {
     const { t } = useTranslation();

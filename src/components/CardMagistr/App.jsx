@@ -31,7 +31,7 @@ const FinancialTechnologies = ({ title, priceKun }) => {
                 </div>
             </div>
             <div className="text-center mt-2 mb-4">
-                <Link to="https://qabul.usat.uz/sign-up?phone=">
+                <Link to="https://qabul.usat.uz?utm_source=web&utm_medium=site&utm_campaign=usatuz">
                     <button type="button" className="group w-full flex  items-center bg-amber-400/[1] pt-2  pr-8  pb-2  ps-2  gap-[0.63rem] rounded-full opacity-[0.00rem] hover:bg-yellow-600  transition-colors duration-300">
                         <img
                             id="card_button_icon"

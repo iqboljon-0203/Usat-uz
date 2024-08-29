@@ -1,4 +1,4 @@
-import Students from "../../../assets/logos/students.png"
+import Students from "../../../assets/logos/students.webp"
 import "./MagistrInfo.css"
 import { useTranslation } from "react-i18next";
 const MagistrInfo: React.FC = () => {

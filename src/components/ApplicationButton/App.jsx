@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function App() {
     const { t } = useTranslation();
     return (
-        <Link to="https://qabul.usat.uz/sign-up
+        <Link to="https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz
         ">
             <Button
                 id="button"
