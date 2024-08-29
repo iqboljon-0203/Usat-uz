@@ -7,7 +7,6 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Pagination } from 'swiper/modules';
 import CardBachelor from '../CardBachelor/App';
 export default function App() {
     const Language=localStorage.getItem("i18nextLng")||'uz';
@@ -303,7 +302,7 @@ export default function App() {
                     clickable: true,
                 }}
                 className="mySwiper"
-                modules={[Pagination]}
+                
                 style={{
                     display: 'flex',
                     alignItems: 'stretch',
@@ -313,28 +312,22 @@ export default function App() {
                     200: {
                         slidesPerView: 1,
                         spaceBetween: 20,
-                        pagination:{
-                            clickable:true
-                        }
+                        
                         
                     },
                     800: {
                         slidesPerView: 1,
                         spaceBetween: 20,
-                        pagination:{
-                            clickable:true
-                        }
+                        
                        
                     },
                     1000: {
                         slidesPerView: 1.5,
                         spaceBetween: 20,
-                        pagination:false
                     },
                     1100: {
                         slidesPerView: 1.5,
                         spaceBetween: 20,
-                        pagination:false
                     },
                 }}
             >

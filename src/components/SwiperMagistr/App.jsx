@@ -7,7 +7,6 @@ import 'swiper/css/pagination';
 import "./styles.css";
 
 // import required modules
-import { Pagination } from 'swiper/modules';
 import CardMagistr from '../CardMagistr/App';
 export default function App() {
     const Languagemag=localStorage.getItem("i18nextLng")||'uz';
@@ -85,7 +84,6 @@ export default function App() {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
                 style={{
                     display: 'flex',
                     alignItems: 'stretch',
@@ -96,26 +94,20 @@ export default function App() {
                     200: {
                         slidesPerView: 1,
                         spaceBetween: 20,
-                        pagination:{
-                            clickable:true
-                        }
+                      
                     },
                     800: {
                         slidesPerView: 1,
                         spaceBetween: 20,
-                        pagination:{
-                            clickable:true
-                        }
+                        
                     },
                     1000: {
                         slidesPerView: 1.5,
                         spaceBetween: 20,
-                        pagination:false
                     },
                     1100: {
                         slidesPerView: 1.5,
                         spaceBetween: 20,
-                        pagination:false
                     },
                 }}
             >
