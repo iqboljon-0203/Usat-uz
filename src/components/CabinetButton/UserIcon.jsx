@@ -1,12 +1,9 @@
 import React from 'react';
 export const UserIcon = ({
-    fill = 'currentColor',
-    filled,
-    size,
+    
     height=100,
     width=140,
-    label,
-    ...props
+    
 }) => {
     return (
         <svg
