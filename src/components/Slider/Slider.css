@@ -497,29 +497,30 @@
 @media screen and (max-width: 450px) {
     .about_item {
         height: 300px;
-        padding: 20px;  
+        padding: 15px;  
         margin-bottom: 20px;
         padding-bottom: 30px;
     }
     .about_img {
-        width: 90px;
-        height: 90px;
-        margin-bottom: 20px;
-        margin-top: 10px;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 12px;
+        margin-top: 0px;
     }
     .about_img img{
-      width: 70px;
-      height: 70px;
+      width: 65px;
+      height: 65px;
     }
     .about_info_title {
+        width: 80%;
         font-size: 15px;
         font-weight: 700;
-        line-height: 15.4px;
-        margin-bottom: 15px;
+        line-height: 17.4px;
+        margin-bottom: 8px;
     }
     .about_info_text {
         font-size: 14px;
         font-weight: 400;
-        line-height: 13.2px;
+        line-height: 15.2px;
     }
 }

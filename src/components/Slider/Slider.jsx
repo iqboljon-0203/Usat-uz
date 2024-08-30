@@ -22,7 +22,7 @@ export default function App() {
         <>
             <Swiper
                 slidesPerView={1}
-                spaceBetween={10}
+                spaceBetween={20}
                 pagination={{
                     clickable: true,
                 }}
@@ -36,11 +36,11 @@ export default function App() {
                     // Qo'shimcha breakpointlar
                     545: {
                         slidesPerView: 2,
-                        spaceBetween: 10,
+                        spaceBetween: 20,
                     },
                     480: {
                         slidesPerView: 1,
-                        spaceBetween: 10,
+                        spaceBetween: 20,
                     },
                 }}
             >

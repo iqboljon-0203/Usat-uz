@@ -5,12 +5,31 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "./styles.css";
+import { useState,useRef,useEffect } from 'react';
 
 // import required modules
+import { Pagination } from 'swiper/modules';
 import CardMagistr from '../CardMagistr/App';
 export default function App() {
     const Languagemag=localStorage.getItem("i18nextLng")||'uz';
+    const [showPagination, setShowPagination] = useState(false);
+    const swiperRef = useRef(null);
+     const handleResize = () => {
+        const windowWidth = window.innerWidth;
+        if (windowWidth <= 800) {
+            setShowPagination(true);
+        } else {
+            setShowPagination(false);
+        }
+    };
 
+    useEffect(() => {
+        handleResize(); // Initial check
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     const CONTRACT_INFO_MAGISTR_UZ = {
         "Ijtimoiy-gumanitar fanlarni o'qitish metodikasi (tarix)": {
             Kunduzgi: '21.8',
@@ -81,14 +100,15 @@ export default function App() {
             <Swiper
                 slidesPerView={1}
                 spaceBetween={20}
-                pagination={{
-                    clickable: true,
-                }}
+                 pagination={showPagination ? { clickable: true } : false}
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
+                modules={[Pagination]}
                 style={{
                     display: 'flex',
                     alignItems: 'stretch',
                     justifyContent: 'space-between',
                 }}
+
                 className="mySwiper"
                 breakpoints={{
                     200: {

@@ -5,11 +5,30 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-
+import { useState,useRef,useEffect } from 'react';
 // import required modules
+import { Pagination } from 'swiper/modules';
 import CardBachelor from '../CardBachelor/App';
 export default function App() {
     const Language=localStorage.getItem("i18nextLng")||'uz';
+    const [showPagination, setShowPagination] = useState(false);
+    const swiperRef = useRef(null);
+     const handleResize = () => {
+        const windowWidth = window.innerWidth;
+        if (windowWidth <= 800) {
+            setShowPagination(true);
+        } else {
+            setShowPagination(false);
+        }
+    };
+
+    useEffect(() => {
+        handleResize(); // Initial check
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     const CONTRACT_INFO_UZ = {
         'Maktabgacha ta’lim': {
             Kunduzgi: '12.9',
@@ -298,11 +317,10 @@ export default function App() {
             <Swiper
                 slidesPerView={1}
                 spaceBetween={20}
-                pagination={{
-                    clickable: true,
-                }}
+                pagination={showPagination ? { clickable: true } : false}
                 className="mySwiper"
-                
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
+                modules={[Pagination]}
                 style={{
                     display: 'flex',
                     alignItems: 'stretch',

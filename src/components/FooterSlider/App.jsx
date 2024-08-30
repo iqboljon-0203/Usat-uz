@@ -1,19 +1,46 @@
-import React from 'react';
-import Tg from "../../../assets/logos/tg.svg";
-import Instagram from "../../../assets/logos/insta.svg";
-import Facebook from '../../../assets/logos/facebook.svg';
-import "./Footer.css"
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import Tg from "../../assets/logos/tg.svg";
+import Instagram from "../../assets/logos/insta.svg";
+import Facebook from '../../assets/logos/facebook.svg';
+
+import "./FooterSlide.css"
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import FooterSlider from "../../../components/FooterSlider/App.jsx"
-const Footer: React.FC = () => {
-    const { t } = useTranslation();
+
+// import required modules
+import {  Autoplay } from 'swiper/modules';
+export default function App() {
+    const {t}=useTranslation();
+
     return (
         <>
-        <footer className="footer">
-            <div className="mx-auto px-4">
-                <ul className="list">
-                    <li className='item'>
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={0}
+                pagination={{
+                    clickable: true,
+                }}
+                className="mySwiper"
+                autoplay={{
+                    delay: 2500, // 2.5 seconds delay between slides
+                    disableOnInteraction: false, // Autoplay will not be disabled after user interaction
+                }}
+                modules={[ Autoplay]}
+                style={{
+                    display: 'flex',
+                    alignItems: 'stretch',
+                    justifyContent: 'space-between',
+                }}
+              
+            >
+                <SwiperSlide style={{backgroundColor:"transparent"}}>
+                    
+                     <li className='child'>
                         <Link to="https://t.me/usatuzb">
                             <img
                                 src={Tg}
@@ -39,8 +66,10 @@ const Footer: React.FC = () => {
                             ></img>
                         </Link>
                     </li>
-                    <li className="item">
-                        <p className="item_manzil">
+                </SwiperSlide>
+                <SwiperSlide style={{backgroundColor:"transparent"}}>
+                     <li className="child">
+                        <p className="child_manzil">
                             <Link
                                 className="text-center"
                                 to={
@@ -51,8 +80,10 @@ const Footer: React.FC = () => {
                             </Link>
                         </p>
                     </li>
-                    <li className="item">
-                        <p className="tel">
+                </SwiperSlide>
+                <SwiperSlide style={{backgroundColor:"transparent"}}>
+                     <li className="child">
+                        <p className="child_tel">
                             <Link
                                 className="text-center"
                                 to={'tel:+998 78 888 38 88'}
@@ -61,15 +92,8 @@ const Footer: React.FC = () => {
                             </Link>
                         </p>
                     </li>
-                </ul>
-            </div>
-        </footer>
-        <div className='wrapper'>
-            <FooterSlider></FooterSlider>
-        </div>
+                </SwiperSlide>
+            </Swiper>
         </>
-        
     );
-};
-
-export default Footer;
+}

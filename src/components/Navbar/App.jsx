@@ -9,7 +9,7 @@ import {
     NavbarItem,
     Link,
 } from '@nextui-org/react';
-import UsatLogo from '../../assets/logos/usatLogo.svg';
+import UsatLogo from '../../assets/logos/usatLogo.webp';
 import LanguageSelector from '../LanguageSelector/App';
 import './Navbar.css';
 import { useTranslation } from 'react-i18next';
