@@ -13,7 +13,6 @@ import UsatLogo from '../../assets/logos/usatLogo.webp';
 import LanguageSelector from '../LanguageSelector/App';
 import './Navbar.css';
 import { useTranslation } from 'react-i18next';
-
 export default function App() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const { t } = useTranslation();
@@ -50,6 +49,7 @@ export default function App() {
             <NavbarContent justify="start">
                 <NavbarBrand>
                     <img
+                    loading='lazy'
                         src={UsatLogo}
                         width={353}
                         height={353}
@@ -72,8 +72,9 @@ export default function App() {
                 ))}
             </NavbarContent>
 
-            <NavbarContent justify="end">
-                <NavbarItem>
+            <NavbarContent  justify="end">
+                
+                <NavbarItem className='ml-4'>
                     <LanguageSelector />
                 </NavbarItem>
             </NavbarContent>

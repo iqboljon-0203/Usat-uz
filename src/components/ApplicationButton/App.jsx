@@ -15,9 +15,12 @@ export default function App() {
                 color="default"
                 variant="flat"
                 startContent={<FileIcon />}
-                className="text-cyan-900/[1] px-10 py-8 text-2xl font-medium leading-[1.27rem] text-left rounded-full "
+                className="text-cyan-900/[1] font-Inter px-10 py-8 text-2xl font-medium leading-[1.27rem] text-left rounded-full "
                 style={{
-                    backgroundColor: 'white'
+                    backgroundColor: 'white',
+                    fontFamily: 'Inter',
+                    fontStyle: 'normal',
+                    fontWeight: '500',
                 }}
             >
                 {t('ariza')}

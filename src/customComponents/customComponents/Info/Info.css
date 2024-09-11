@@ -12,9 +12,7 @@
 }
 .info_item {
     width: 50%;
-    background-color: rgba(33, 70, 109, 1);
     border-radius: 30px;
-    opacity: 0px;
 }
 .info_item img {
     width: 100%;
@@ -29,6 +27,7 @@
     padding-left: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: rgba(33, 70, 109, 1);
 }
 .info_item_new div {
     width: 80%;

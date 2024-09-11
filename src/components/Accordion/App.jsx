@@ -97,7 +97,7 @@ export default function App() {
         {
             title: "Abituriyent UZBMB (DTM) natijasi bilan oq'ishga imtihonsiz qabul qilinadimi?",
             content:
-                "Ha, davlat oliy ta'lim muassasiga test topshirgan bo'lsangiz va kontraktga ballingiz yetmagan bo'lsa, shu ball bilan universitetimizga imtihonsiz qabul qilinishingiz mumkin. Hujjatlaringizni <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz'>qabul.usat.uz</a> sayti yoki <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Qabul boti</a> boti orqali topshirishingiz mumkin. Arizangiz javobi bir kunda telefon raqamingizga SMS tarzida yuboriladi.",
+                "Ha, davlat oliy ta'lim muassasiga test topshirgan bo'lsangiz va kontraktga ballingiz yetmagan bo'lsa, shu ball bilan universitetimizga imtihonsiz qabul qilinishingiz mumkin. Hujjatlaringizni <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a> sayti yoki <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Qabul boti</a> boti orqali topshirishingiz mumkin. Arizangiz javobi bir kunda telefon raqamingizga SMS tarzida yuboriladi.",
         },
         {
             title: "Chet tilini bilish sertifikatiga ega bo'lganlarga qandaydir imtiyozlar bormi?",
@@ -107,7 +107,7 @@ export default function App() {
         {
             title: "Shartnomani qayerdan olsam bo'ladi?",
             content:
-                "Shartnomani <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz'>qabul.usat.uz</a> saytidagi shaxsiy kabinetda yoki <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram boti</a> orqali yuklab olishingiz mumkin.",
+                "Shartnomani <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a> saytidagi shaxsiy kabinetda yoki <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram boti</a> orqali yuklab olishingiz mumkin.",
         },
         {
             title: "Shartnoma bo'yicha birinchi to'lovni qanchon amalga oshirishim kerak?",
@@ -211,7 +211,7 @@ export default function App() {
         {
             title: 'Можно ли поступить с результатом UZBMB (ГЦЭ) без экзаменов?',
             content:
-                "Да, если вы сдавали госэкзамен, но не набрали проходной балл для поступления в государственный вуз, вы можете быть приняты в наш университет без экзаменов по этим баллам. Вы можете подать свои документы через сайт q<a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz'>qabul.usat.uz</a>. или через бот <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz.'>Qabul Bot</a>. Ответ на вашу заявку будет отправлен в виде SMS на ваш телефон в течение одного дня.",
+                "Да, если вы сдавали госэкзамен, но не набрали проходной балл для поступления в государственный вуз, вы можете быть приняты в наш университет без экзаменов по этим баллам. Вы можете подать свои документы через сайт q<a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a>. или через бот <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz.'>Qabul Bot</a>. Ответ на вашу заявку будет отправлен в виде SMS на ваш телефон в течение одного дня.",
         },
         {
             title: 'Есть ли льготы для обладателей сертификатов владения иностранным языком?',
@@ -221,7 +221,7 @@ export default function App() {
         {
             title: 'Где я могу получить договор?',
             content:
-                "Вы можете скачать договор в личном кабинете на сайте <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz'>qabul.usat.uz</a> или через <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Телеграм-бот</a>.",
+                "Вы можете скачать договор в личном кабинете на сайте <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a> или через <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Телеграм-бот</a>.",
         },
         {
             title: 'Когда я должен произвести первый платеж по договору?',
@@ -325,7 +325,7 @@ export default function App() {
         {
             title: 'Can applicants be admitted with UZBMB (DMT) results without exams?',
             content:
-                "Yes, if you took tests at a state higher education institution and did not score enough for the contract, you can be admitted to our university without exams with those scores. You can submit your documents through the <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='qabul.usat.uz'>qabul.usat.uz</a> website or <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram bot</a>. Your application response will be sent to your phone number as an SMS within one day.",
+                "Yes, if you took tests at a state higher education institution and did not score enough for the contract, you can be admitted to our university without exams with those scores. You can submit your documents through the <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a> website or <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram bot</a>. Your application response will be sent to your phone number as an SMS within one day.",
         },
         {
             title: 'Are there any benefits for holders of language proficiency certificates?',
@@ -335,7 +335,7 @@ export default function App() {
         {
             title: 'Where can I get the contract?',
             content:
-                "You can download the contract from your personal account on the <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz'>qabul.usat.uz</a> website or through the <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram bot</a>.",
+                "You can download the contract from your personal account on the <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz'>qabul.usat.uz</a> website or through the <a style='color: rgba(33, 70, 109, 1)' target='_blank' href='https://t.me/usat_bot?start=qabul_usat_uz'>Telegram bot</a>.",
         },
         {
             title: 'When should I make the first payment for the contract?',

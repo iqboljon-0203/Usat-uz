@@ -13,6 +13,7 @@ const MagistrInfo: React.FC = () => {
                         className="magistr_info_item_img"
                         src={Students}
                         alt="Students"
+                        loading="lazy"
                     ></img>
                 </li>
                 <li className="magistr_info_item magistr_info_item_new">

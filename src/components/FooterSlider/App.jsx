@@ -43,6 +43,7 @@ export default function App() {
                      <li className='child'>
                         <Link to="https://t.me/usatuzb">
                             <img
+                            loading='lazy'
                                 src={Tg}
                                 alt="Logo"
                                 width={100}
@@ -51,6 +52,7 @@ export default function App() {
                         </Link>
                         <Link to="https://www.instagram.com/usatuz/">
                             <img
+                            loading='lazy'
                                 src={Instagram}
                                 alt="Logo"
                                 width={100}
@@ -59,6 +61,7 @@ export default function App() {
                         </Link>
                         <Link to="https://www.facebook.com/usatuz/">
                             <img
+                            loading='lazy'
                                 src={Facebook}
                                 alt="Logo"
                                 width={100}

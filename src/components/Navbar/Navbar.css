@@ -37,7 +37,9 @@
     /* background-color: green; */
     flex-grow: 0.4;
     width: 10%;
-    gap: 0px;
+    gap: 10px;
+    
+
 }
 .navbar header ul:nth-child(4)>li>{ 
     width: 100%;
@@ -45,6 +47,7 @@
 }
 .navbar header ul:nth-child(4)>li>div{ 
     width: 100%;
+
     /* background-color: yellow; */
 }
 .navbar header ul:nth-child(4)>li>div>button{ 
@@ -55,6 +58,7 @@
     width: 100%;
     /* background-color: yellow; */
 }
+
 @media screen and (max-width: 1760px) {
     .navbar header ul:nth-child(3)>li>a{ 
     /* background-color: red; */

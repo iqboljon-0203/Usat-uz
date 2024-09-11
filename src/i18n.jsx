@@ -1,11 +1,10 @@
-"use client";
 import i18n from 'i18next';
 import Backend from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import translationUz from '../public/locales/uz/common.json';
-import translationRu from '../public/locales/ru/common.json';
-import translationEn from '../public/locales/en/common.json';
+import translationUz from './public/locales/uz/common.json';
+import translationRu from './public/locales/ru/common.json';
+import translationEn from './public/locales/en/common.json';
 const language=localStorage.getItem("i18nextLng")||'uz';
 const resources = {
     "uz": {
@@ -24,6 +23,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next)
         i18n.init({
             lng: language,
             fallbackLng: 'uz',
+            preload:['uz','ru','en'],
             resources,
             interpolation: {
                 escapeValue: false,

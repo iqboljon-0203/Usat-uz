@@ -3,17 +3,17 @@ import File from '../../assets/logos/filenew.svg';
 import { useTranslation } from 'react-i18next';
 import  './CardMag.css';
 import { Link } from 'react-router-dom';
-const FinancialTechnologies = ({ title, priceKun }) => {
+const FinancialTechnologies =React.memo(({ title, priceKun }) => {
     const {t}=useTranslation();
     return (
         <div id="card" className="w-full flex flex-col justify-center  bg-white rounded-3xl  px-8 pt-12 h-full">
-            <div className="text-start">
-                <h1 id="card_title" className="text-5xl font-bold leading-[2.90rem] text-left text-cyan-900/[1] mb-4 uppercase">
+            <div className="text-start h-1/5  flex items-center justify-start mt-10">
+                <h1 id="card_title" className="text-5xl font-bold leading-[2.40rem] text-left mb-10 mt-10 text-cyan-900/[1]  uppercase">
                     {title}
                 </h1>
             </div>
-            <div className="space-y-2 mb-2">
-                <div className="py-4 mb-2">
+            <div className="space-y-2 h-3/5 flex flex-col justify-center">
+                <div className="py-2">
                     <h2 id="card_subtitle" className="text-4xl font-bold leading-[1.70rem] text-left uppercase text-cyan-900/[0.35] mb-4">
                         {t('kunduzgi')}
                     </h2>
@@ -30,8 +30,8 @@ const FinancialTechnologies = ({ title, priceKun }) => {
                     </div>
                 </div>
             </div>
-            <div className="text-center mt-2 mb-4">
-                <Link to="https://qabul.usat.uz?utm_source=web&utm_medium=site&utm_campaign=usatuz">
+            <div className="text-center  mb-2 h-1/5">
+                <Link to="https://qabul.usat.uz/sign-up?utm_source=web&utm_medium=site&utm_campaign=usatuz">
                     <button type="button" className="group w-full flex  items-center bg-amber-400/[1] pt-2  pr-8  pb-2  ps-2  gap-[0.63rem] rounded-full opacity-[0.00rem] hover:bg-yellow-600  transition-colors duration-300">
                         <img
                             id="card_button_icon"
@@ -40,13 +40,13 @@ const FinancialTechnologies = ({ title, priceKun }) => {
                             alt="File icon"
                         ></img>{' '}
                         <p id="card_button_text" className="text-2xl font-medium leading-[1.27rem] text-left mx-auto  text-cyan-900/[1] group-hover:text-white transition-colors duration-300">
-                            {t('ariza')}
+                            {t('ariza_button')}
                         </p>
                     </button>
                 </Link>
             </div>
         </div>
     );
-};
+});
 
 export default FinancialTechnologies;

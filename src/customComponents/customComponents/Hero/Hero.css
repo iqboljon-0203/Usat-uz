@@ -23,7 +23,7 @@
     margin-bottom: 20px;
     color: white;
 }
-.info {
+.hero_info {
     font-family: Inter;
     font-size: 32px;
     font-weight: 400;
@@ -46,7 +46,7 @@
         text-align: center;
         margin-bottom: 18px;
     }
-    .info {
+    .hero_info {
         font-size: 28px;
         font-weight: 400;
         line-height: 40.8px;
@@ -63,7 +63,7 @@
         text-align: center;
         margin-bottom: 18px;
     }
-    .info {
+    .hero_info {
         width: 80%;
         font-size: 25px;
         font-weight: 400;
@@ -81,7 +81,7 @@
         text-align: center;
         margin-bottom: 18px;
     }
-    .info {
+    .hero_info {
         width: 80%;
         font-size: 24px;
         font-weight: 400;
@@ -99,7 +99,7 @@
         text-align: center;
         margin-bottom: 18px;
     }
-    .info {
+    .hero_info {
         width: 80%;
         font-size: 22px;
         font-weight: 400;
@@ -117,7 +117,7 @@
         text-align: center;
         margin-bottom: 18px;
     }
-    .info {
+    .hero_info {
         width: 80%;
         font-size: 20px;
         font-weight: 400;
@@ -135,7 +135,7 @@
         text-align: center;
         margin-bottom: 16px;
     }
-    .info {
+    .hero_info {
         width: 80%;
         font-size: 20px;
         font-weight: 300;
@@ -153,7 +153,7 @@
         text-align: center;
         margin-bottom: 16px;
     }
-    .info {
+    .hero_info {
         width: 80%;
         font-size: 20px;
         font-weight: 300;
@@ -162,6 +162,20 @@
     }
 }
 @media screen and (max-width: 880px) {
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .buttons > a:nth-child(2) {
+        order:10
+    }
+    .buttons>a:nth-child(1)>button{
+        width:300px;
+    }
+    .buttons>a:nth-child(3)>button{
+        width: 300px;
+    }
     .title {
         width: 80%;
         font-size: 40px;
@@ -171,7 +185,7 @@
         text-align: center;
         margin-bottom: 16px;
     }
-    .info {
+    .hero_info {
         width: 80%;
         font-size: 18px;
         font-weight: 300;
@@ -192,7 +206,7 @@
         text-align: center;
         margin-bottom: 16px;
     }
-    .info {
+    .hero_info {
         width: 80%;
         font-size: 18px;
         font-weight: 300;
@@ -213,7 +227,7 @@
         text-align: center;
         margin-bottom: 16px;
     }
-    .info {
+    .hero_info {
         width: 80%;
         font-size: 16px;
         font-weight: 300;
@@ -223,8 +237,43 @@
      .hero{
         background-position: calc(50% - 160px) top;
     }
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .buttons > a:nth-child(2) {
+        order:10
+    }
+    .buttons>a:nth-child(1)>button{
+        width:300px;
+    }
+    .buttons>a:nth-child(3)>button{
+        width: 300px;
+    }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 620px) {
+    .buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .buttons > a:nth-child(2) {
+        order:10
+    }
+    .buttons>a:nth-child(1)>button{
+        width:500px;
+    }
+    .buttons>a:nth-child(3)>button{
+        width: 500px;
+    }
+    .buttons>a:nth-child(2)>button{
+        width: 500px;
+    }
     .title {
         width: 85%;
         font-size: 32px;
@@ -234,7 +283,7 @@
         text-align: center;
         margin-bottom: 16px;
     }
-    .info {
+    .hero_info {
         width: 85%;
         font-size: 15px;
         font-weight: 300;
@@ -262,7 +311,7 @@
         text-align: center;
         margin-bottom: 16px;
     }
-    .info {
+    .hero_info {
         width: 85%;
         font-size: 15px;
         font-weight: 300;
@@ -284,7 +333,7 @@
         text-align: center;
         margin-bottom: 16px;
     }
-    .info {
+    .hero_info {
         width: 85%;
         font-size: 15px;
         font-weight: 300;

@@ -1,22 +1,27 @@
 
-import './App.css'
-import Hero from "./customComponents/customComponents/Hero/App";
-import About from './customComponents/customComponents/About/App';
-import Info from './customComponents/customComponents/Info/App';
-import Bachelor from './customComponents/customComponents/Bachelor/App';
-import MagistrInfo from './customComponents/customComponents/MagistrInfo/App';
-import Magistr from './customComponents/customComponents/Magistr/App';
-import Questions from './customComponents/customComponents/Questions/App';
+import {Suspense,lazy} from 'react';
+import LoadingPage from './customComponents/customComponents/LoadingPage/App';
+const UsatVideo=lazy(()=>import('./customComponents/customComponents/VideoPlayer/App'));
+const Hero = lazy(() => import('./customComponents/customComponents/Hero/App'));
+const About = lazy(() => import('./customComponents/customComponents/About/App'));
+const Info = lazy(() => import('./customComponents/customComponents/Info/App'));
+const Bachelor=lazy(() => import('./customComponents/customComponents/Bachelor/App'));
+const MagistrInfo =lazy(() => import('./customComponents/customComponents/MagistrInfo/App'));
+const Magistr = lazy(() => import('./customComponents/customComponents/Magistr/App'));
+const Questions = lazy(() => import('./customComponents/customComponents/Questions/App'));
 function App() {
     return (
-        <>
-            <Hero></Hero>
-            <About></About>
-            <Info></Info>
-            <Bachelor></Bachelor>
-            <MagistrInfo></MagistrInfo>
-            <Magistr></Magistr>
-            <Questions></Questions>
+        <>  
+            <Suspense fallback={<LoadingPage></LoadingPage>}>
+                 <Hero></Hero>
+                <About></About>
+                <Info></Info>
+                <UsatVideo videoId="e6icoGpavgM"></UsatVideo>
+                <Bachelor></Bachelor>
+                <MagistrInfo></MagistrInfo>
+                <Magistr></Magistr>
+                <Questions></Questions>
+            </Suspense>
         </>
     )
 }

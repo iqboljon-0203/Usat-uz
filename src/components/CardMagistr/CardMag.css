@@ -4,8 +4,29 @@
     justify-content: center;
     padding-bottom: 20px;
  }
+ #card_title, #card_subtitle {
+    font-family: "Steppe Trial";
+    font-weight: 700;
+}
+#card_price{
+    font-family: "Inter";
+    font-weight: 700;
+}
+  #card_money,#card_contract{
+    font-family: "Inter";
+    font-weight: 400;
+ }
+  #card_button{
+    font-family: "Inter";
+    font-weight: 500;
+  }
  #card_button_icon {
         width: 60px;
+    }
+     #card_title {
+        
+        line-height: 1;
+        font-weight: 700;
     }
 @media screen and (max-width: 1840px) {
     #card {
@@ -67,7 +88,7 @@
     }
     #card_title {
         margin-bottom: 0.8rem;
-        font-size: 2.7rem;
+        font-size: 2.4rem;
         line-height: 1;
         font-weight: 700;
     }
@@ -118,7 +139,7 @@
     }
     #card_title {
         margin-bottom: 0.8rem;
-        font-size: 2.6rem;
+        font-size: 2.3rem;
         line-height: 1;
         font-weight: 700;
     }
@@ -165,7 +186,7 @@
     }
     #card_title {
         margin-bottom: 0.8rem;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         line-height: 1;
         font-weight: 700;
     }
@@ -212,7 +233,7 @@
     }
     #card_title {
         margin-bottom: 0.8rem;
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         line-height: 1;
         font-weight: 700;
     }
@@ -258,8 +279,9 @@
         border-radius: 1.5rem;
     }
     #card_title {
-        margin-bottom: 0.8rem;
-        font-size: 2.2rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 1.9rem;
         line-height: 1;
         font-weight: 700;
     }
@@ -305,8 +327,8 @@
         border-radius: 1.5rem;
     }
     #card_title {
-        margin-bottom: 0.8rem;
-        font-size: 2.1rem;
+        margin-bottom: 0;
+        font-size: 1.7rem;
         line-height: 1;
         font-weight: 700;
     }
@@ -352,8 +374,8 @@
         border-radius: 1.5rem;
     }
     #card_title {
-        margin-bottom: 0.8rem;
-        font-size: 2rem;
+        margin-bottom: 0;
+        font-size: 1.6rem;
         line-height:1;
         font-weight: 700;
     }
@@ -399,8 +421,8 @@
         border-radius: 1.5rem;
     }
     #card_title {
-        margin-bottom: 0.8rem;
-        font-size: 1.8rem;
+        margin-bottom: 0;
+        font-size: 1.5rem;
         line-height:1;
         font-weight: 700;
     }
@@ -446,8 +468,8 @@
         border-radius: 1.5rem;
     }
     #card_title {
-        margin-bottom: 0.8rem;
-        font-size: 1.6rem;
+        margin-bottom: 0;
+        font-size: 1.4rem;
         line-height: 1;
         font-weight: 700;
     }
@@ -495,7 +517,7 @@
         border-radius: 1.5rem;
     }
     #card_title {
-        margin-bottom: 0.8rem;
+        margin-bottom: 0;
         font-size: 1.4rem;
         line-height: 1;
         font-weight: 700;
@@ -541,7 +563,7 @@
     #card {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        padding-top:2.5rem;
+        padding-top:0rem;
         border-radius: 1.5rem;
     }
     #card_title {
@@ -591,7 +613,7 @@
     #card {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        padding-top:2.5rem;
+        padding-top:0rem;
         border-radius: 1.5rem;
     }
     #card_title {
@@ -641,7 +663,7 @@
     #card {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        padding-top:2.5rem;
+        padding-top:0rem;
         border-radius: 1.5rem;
     }
     #card_title {

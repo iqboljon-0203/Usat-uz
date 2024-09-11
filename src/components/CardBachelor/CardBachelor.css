@@ -1,6 +1,24 @@
 #card{
     height: 100%;
 }
+
+#card_title, #card_subtitle {
+    font-family: "Steppe Trial";
+    font-weight: 700;
+}
+#card_price{
+    font-family: "Inter";
+    font-weight: 700;
+}
+  #card_money,#card_contract{
+    font-family: "Inter";
+    font-weight: 400;
+ }
+  #card_button{
+    font-family: "Inter";
+    font-weight: 500;
+  }
+
 #card_button_icon {
         width: 60px;
     }

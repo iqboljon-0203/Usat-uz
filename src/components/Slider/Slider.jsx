@@ -48,6 +48,7 @@ export default function App() {
                     <li className="about_item">
                         <div className="about_img">
                             <img
+                                loading='lazy'
                                 src={IconContract}
                                 width={70}
                                 height={70}
@@ -69,6 +70,7 @@ export default function App() {
                     <li className="about_item">
                         <div className="about_img">
                             <img
+                                loading='lazy'
                                 src={Cash}
                                 width={70}
                                 height={70}
@@ -90,6 +92,7 @@ export default function App() {
                     <li className="about_item">
                         <div className="about_img">
                             <img
+                                loading='lazy'
                                 src={Check}
                                 width={70}
                                 height={70}
@@ -111,6 +114,7 @@ export default function App() {
                     <li className="about_item">
                         <div className="about_img">
                             <img
+                                loading='lazy'
                                 src={Tax}
                                 width={70}
                                 height={70}
@@ -132,6 +136,7 @@ export default function App() {
                     <li className="about_item">
                         <div className="about_img">
                             <img
+                                loading='lazy'
                                 src={Earning}
                                 width={70}
                                 height={70}
@@ -153,6 +158,7 @@ export default function App() {
                     <li className="about_item">
                         <div className="about_img">
                             <img
+                                loading='lazy'
                                 src={UserGroup}
                                 width={70}
                                 height={70}
@@ -174,6 +180,7 @@ export default function App() {
                     <li className="about_item">
                         <div className="about_img">
                             <img
+                                loading='lazy'
                                 src={Graduation}
                                 width={70}
                                 height={70}
@@ -195,6 +202,7 @@ export default function App() {
                     <li className="about_item">
                         <div className="about_img">
                             <img
+                                loading='lazy'
                                 src={Diploma}
                                 width={70}
                                 height={70}

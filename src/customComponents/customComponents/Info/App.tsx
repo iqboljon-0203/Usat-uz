@@ -1,16 +1,17 @@
 import './Info.css';
-import Usat from '../../../assets/logos/usat_title.webp';
+import Usat from '../../../assets/logos/usatMain.webp';
 import { useTranslation } from 'react-i18next';
 const Info: React.FC = () => {
     const { t } = useTranslation();
     return (
-        <section id="info" className='info'>
+        <section id='info'  className='info'>
             <ul className='info_list'>
                 <li className="info_item">
                     <img
                         src={Usat}
                         alt="Usat"
                         style={{ maxWidth: '100%' }}
+                        loading='lazy'
                     ></img>
                 </li>
                 <li className="info_item info_item_new">
